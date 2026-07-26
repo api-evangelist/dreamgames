@@ -1,8 +1,14 @@
 aid: dreamgames
 name: dreamgames
-description: dreamgames is a company surfaced as a portfolio company of balderton-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Dream Games is a mobile gaming developer with offices in Istanbul and London that builds
+  high-quality, long-lifecycle casual puzzle games, best known for Royal Match and Royal Kingdom.
+  The company combines technology and creativity to produce polished match-3 titles played by tens
+  of millions of players worldwide, and it was surfaced as a portfolio company of balderton-capital.
+  Dream Games operates as a consumer game publisher rather than an API provider: it publishes no
+  public developer portal, OpenAPI, SDKs, or programmatic API surface. This profile therefore
+  captures the company's real public web, legal, and security surface (website, terms, privacy,
+  careers, help center, and a published security.txt) rather than developer artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/dreamgames/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +16,28 @@ x-backed-by:
 - balderton-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.dreamgames.com/
 tags:
 - Company
+- Mobile Gaming
+- Games
+- Puzzle
+- Consumer
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/dreamgames-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.dreamgames.com/.well-known/security.txt
+- type: DomainSecurity
+  url: security/dreamgames-domain-security.yml
+- type: SecurityTxt
+  url: well-known/dreamgames-security.txt
+- type: WellKnown
+  url: well-known/dreamgames-well-known.yml
 - type: Website
   url: https://dreamgames.com/
+- type: About
+  url: https://www.dreamgames.com/about-us
+- type: Support
+  url: https://dreamgames.helpshift.com/hc/en/
+- type: TermsOfService
+  url: https://www.dreamgames.com/en/terms
+- type: PrivacyPolicy
+  url: https://www.dreamgames.com/en/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
